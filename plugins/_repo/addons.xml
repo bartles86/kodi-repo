@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addons>
+<addon id="plugin.video.exodus" version="1.3.6" name="Exodus" provider-name="Exodus">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0" />
+		<import addon="repository.exodus" version="1.0.0" />
+		<import addon="script.exodus.artwork" version="1.0.1" />
+		<import addon="script.module.urlresolver" version="3.0.0"/>
+		<import addon="script.module.metahandler" version="1.0.0" />
+		<import addon="plugin.video.youtube" optional="true" />
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Exodus</summary>
+		<description lang="en">Please visit www.tvaddons.ag for Exodus support and assistance! Kindly note that Exodus is not an official part of the media player you are running, and therefore not to be mentioned within official support channels, this addon has nothing to do with the media player itself, nor it’s intended use, it is simply a third party plugin which has been added to your system.</description>
+		<disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.</disclaimer>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="plugin.video.youtubechannels"
+	name="My Youtube Subscriptions"
+	version="1.0.2"
+	provider-name="bartles">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.addon.common" version="2.0.0"/>
+    <import addon="plugin.video.youtube" version="5.0.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">My Youtube Subscriptions</summary>
+    <description lang="en">Youtube channel subscriptons</description>
+    <platform>all</platform>
+    <forum>http://forum.kodi.tv/showthread.php?tid=254203</forum>
+    <source>https://github.com/zag2me/plugin.video.fullycharged</source>
+    <website>https://zag4me.wordpress.com/</website>
+    <email>zag@kodi.tv</email>
+  </extension>
+</addon>
+
+    <addon id="repository.bartles_repo" name="Bartles Repo" version="0.1.0" provider-name="Bartles">
+        <requires>
+            <import addon="xbmc.addon" version="12.0.0"/>
+        </requires>
+        <extension point="xbmc.addon.repository" name="Bartles Repo">
+            <info compressed="false">https://raw.githubusercontent.com/bartles86/kodi-repo/master/plugins/_repo/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/bartles86/kodi-repo/master/plugins/_repo/addons.xml.md5</checksum>
+            <datadir zip="true">https://github.com/bartles86/kodi-repo/raw/master/plugins/_repo</datadir>
+            <hashes>false</hashes>
+        </extension>
+        <extension point="xbmc.addon.metadata">
+            <summary>My Youtube Subscribed Channels</summary>
+            <description>Repo containing my youtube channels addon</description>
+            <platform>all</platform>
+    </extension>
+</addon>
+
+<addon id="plugin.video.md9movies" name="9Movies" version="1.0.8" provider-name="Mucky Duck">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.addon.common" />
+	<import addon="script.module.metahandler" version="2.5.1"/>
+	<import addon="script.module.requests" />
+	<import addon="repository.mdrepo" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Stream Movies From The 9movies.to WebSite</summary>
+    <description lang="en">Stream Movies From The 9movies.to WebSite</description>
+	<disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon or have any affiliation with the website owners</disclaimer>
+    <platform>all</platform>
+  </extension>
+</addon>
+</addons>
